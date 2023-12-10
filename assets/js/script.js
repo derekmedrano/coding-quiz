@@ -7,7 +7,7 @@ var timerEl = document.getElementById('timer');
 var startQuizButtonEl = document.getElementById('start-quiz');
 var startQuizPromptEl = document.getElementById('quizStartPrompt');
 var quizAnswersEl = document.getElementById('quizQuestions');
-var quizAnswersOpt = document.getElementById('quizAnswersOpt');
+// var quizAnswersOpt = document.getElementById('quizAnswersOpt');
 
 function setTime() {
     // Sets interval in variable
@@ -36,8 +36,15 @@ function setTime() {
 
     'A very useful tool used during development and debugging for printing content to the debugger is:' :['1. JavaScript', '2. terminal/bash', '3. for loops', '4 console.log', 3]
 
-
   }
+
+function loadQuizQuestion () {
+
+}
+
+function loadQuizAnswers () {
+
+}
 
 function startQuiz() {   
     console.log("start quiz test log");
