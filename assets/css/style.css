@@ -20,8 +20,11 @@ h1, p, button, #highscores {
   margin-bottom: 10px;
 }
 
-
-.ul-no-bullets, .score-style {
+.answerBtn, #start-quiz, #highscoreSubmit {
+  color: white;
+  background-color: blueviolet;
+}
+.ul-style, .score-style {
   list-style-type: none;
 }
 
