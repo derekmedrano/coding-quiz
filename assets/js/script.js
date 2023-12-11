@@ -9,7 +9,7 @@ var startQuizButtonEl = document.getElementById('start-quiz');
 var startQuizPromptEl = document.getElementById('quizStartPrompt');
 var quizContainer = document.querySelector("#quizBox");
 var timerEl = document.getElementById('timer');
-var scoreEl = document.getElementById('score');
+var checkerEl = document.getElementById('checkerDisplay');
 
 var quizAnswersEl = document.getElementById('quizQuestions');
 
@@ -98,7 +98,7 @@ function checker(event) {
   event.preventDefault();
   console.log('checker test');
 
-  
+
 
 
 
