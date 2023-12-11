@@ -66,6 +66,8 @@ function startQuiz() {
 function insertQuestion() {
   console.log("question test");
 
+  
+
 }
 
 function endQuiz() {
