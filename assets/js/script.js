@@ -8,10 +8,17 @@ var questionNumber = 0;
 var startQuizButtonEl = document.getElementById('start-quiz');
 var startQuizPromptEl = document.getElementById('quizStartPrompt');
 var quizContainer = document.querySelector("#quizBox");
+
 var timerEl = document.getElementById('timer');
 var checkerEl = document.getElementById('checkerDisplay');
 
 var quizAnswersEl = document.getElementById('quizQuestions');
+
+var highscorePromptEl = document.getElementById('highscorePrompt');
+var highscoreEl = document.getElementById('highscore');
+var highscoreInputBoxEl = document.getElementById('highscoreInputBox');
+var highscoreInputEl = document.getElementById('highscoreInput');
+var highscoreSubmitBtnEl = document.getElementById('highscoreSubmit');
 
 // Sets timer in header, ends quiz once time reaches 0
 function setTime() {
