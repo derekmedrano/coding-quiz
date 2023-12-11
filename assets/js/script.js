@@ -5,11 +5,18 @@ var questionNumber = 0;
 
 
 // Selector variables
-var timerEl = document.getElementById('timer');
 var startQuizButtonEl = document.getElementById('start-quiz');
 var startQuizPromptEl = document.getElementById('quizStartPrompt');
-var quizAnswersEl = document.getElementById('quizQuestions');
 var quizContainer = document.querySelector("#quizBox");
+var timerEl = document.getElementById('timer');
+
+var quizAnswersEl = document.getElementById('quizQuestions');
+var answerBtn1 = document.getElementById('ansBtn1');
+var answerBtn2 = document.getElementById('ansBtn2');
+var answerBtn3 = document.getElementById('ansBtn3');
+var answerBtn4 = document.getElementById('ansBtn4');
+
+
 
 function setTime() {
     // Sets interval in variable
@@ -67,6 +74,8 @@ function insertQuestion() {
   console.log("question test");
 
   
+
+
 
 }
 
