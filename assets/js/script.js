@@ -62,7 +62,7 @@ allQuizQuestions = [
 
 
 function startQuiz() {
-  console.log("start quiz test log");
+  console.log('test: quiz start');
   // Removes Quiz Start prompt and displays the quiz in a block, time starts once quiz is loaded
   startQuizPromptEl.style.display = "none";
   quizContainer.style.display = "block";
@@ -75,7 +75,7 @@ function startQuiz() {
 
 //Prints the questions to the page
 function addQuestion() {
-  console.log("question test");
+  console.log('test: add question');
 
   quizAnswersEl.textContent = allQuizQuestions[questionNumber].question;
 
@@ -103,21 +103,23 @@ function checker(event) {
   //then move to next question
   if (allQuizQuestions[questionNumber].correct == event.target.value) {
     checkerDisplay.textContent = 'Correct!';
-  
+
   } else {
     checkerDisplay.textContent = 'Incorrect!';
     secondsLeft = secondsLeft - 15;
   }
 
-
-
-
-
-
+  //Forces the checker to display and removes it after 1 second
+  checkerDisplay.style.display = 'block';
+  setTimeout(function () {
+    console.log('test: timeout')
+    checkerDisplay.style.display = 'none';
+  }, 1000);
 
 }
 
-//Ends the quiz, function is ran when the timer reaches 0
+
+//Ends the quiz, function is ran when the timer reaches zero OR when the last question is finished
 function endQuiz() {
   console.log("end quiz test log");
 
