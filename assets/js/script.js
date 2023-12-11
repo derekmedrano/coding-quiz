@@ -82,12 +82,20 @@ function addQuestion() {
   for (var i = 0; i <= 3; i++) {
     var answerEl = document.getElementById('ansBtn' + i);
     answerEl.textContent = allQuizQuestions[questionNumber].options[i];
+
+
   }
 
 }
 
-function checkAnswer() {
-  console.log("check answer test");
+//This function checks the user's selected answers and determines whether or not the answer was correct or incorrect
+//An event is used here as we need to verify the user's input
+function checker(event) {
+  event.preventDefault();
+  console.log('checker test');
+
+
+
 
 }
 function endQuiz() {
