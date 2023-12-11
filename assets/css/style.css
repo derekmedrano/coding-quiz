@@ -20,9 +20,17 @@ h1, p, button, #highscores {
   margin-bottom: 10px;
 }
 
-.ul-no-bullets {
+
+.ul-no-bullets, .score-style {
   list-style-type: none;
 }
+
+.score-style {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 
 /* Media Queries and Website reponsiveness credits given in readme */
 .css-container {
