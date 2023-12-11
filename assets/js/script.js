@@ -35,27 +35,27 @@ allQuizQuestions = [
   {
     question: 'Commonly used data types do NOT include_______',
     options: ['1. strings', '2. booleans', '3. alerts', '4. numbers'],
-    answer: 2,
+    correct: 2,
   },
   {
     question: 'The condition in an if / else statement is enclosed within_______.',
     options: ['1. quotes', '2. curly brackets', '3. square brackets', '4. parentheses'],
-    answer: 3,
+    correct: 3,
   },
   {
     question: 'Arrays in JavaScripts can be used to store _________',
     options: ['1. numbers and strings', '2. other arrays', '3. booleans', '4. all of the above'],
-    answer: 3,
+    correct: 3,
   },
   {
     question: 'String values must be enclosed within ___________ when being assigned to variables',
     options: ['1. curly brackets', '2. commas', '3. quotes', '4. parentheses'],
-    answer: 0,
+    correct: 0,
   },
   {
     question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
     options: ['1. JavaScript', '2. terminal/bash', '3. for loops', '4 console.log'],
-    answer: 3,
+    correct: 3,
   }
 
 ]
@@ -97,6 +97,18 @@ function addQuestion() {
 function checker(event) {
   event.preventDefault();
   console.log('checker test');
+
+  // if answer is correct display 'Correct!' in checkerEl
+  //else display 'Incorrect! in checkerEl and decrease time by 15 seconds
+  //then move to next question
+  if (allQuizQuestions[questionNumber].correct == event.target.value) {
+    checkerDisplay.textContent = 'Correct!';
+  
+  } else {
+    checkerDisplay.textContent = 'Incorrect!';
+    secondsLeft = secondsLeft - 15;
+  }
+
 
 
 
