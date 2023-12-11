@@ -108,13 +108,20 @@ function checker(event) {
     checkerDisplay.textContent = 'Incorrect!';
     secondsLeft = secondsLeft - 15;
   }
+  questionNumber = questionNumber + 1
 
-  //Forces the checker to display and removes it after 1 second
+  //Forces the checker to display and removes it after 1 second, then calls the next question
   checkerDisplay.style.display = 'block';
   setTimeout(function () {
-    console.log('test: timeout')
+    console.log('test: timeout');
     checkerDisplay.style.display = 'none';
   }, 1000);
+
+  if (questionNumber < allQuizQuestions.length) {
+    addQuestion();
+  } else {
+    endQuiz();
+  }
 
 }
 
