@@ -16,7 +16,7 @@ header {
 }
 
 /* Media Queries and Website reponsiveness credits given in readme */
-.container {
+.css-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;

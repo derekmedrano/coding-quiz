@@ -1,13 +1,15 @@
 // Global variables
 var secondsLeft = 100;
 var score = 0;
+var questionNumber = 0;
+
 
 // Selector variables
 var timerEl = document.getElementById('timer');
 var startQuizButtonEl = document.getElementById('start-quiz');
 var startQuizPromptEl = document.getElementById('quizStartPrompt');
 var quizAnswersEl = document.getElementById('quizQuestions');
-// var quizAnswersOpt = document.getElementById('quizAnswersOpt');
+var quizContainer = document.querySelector("#quizBox");
 
 function setTime() {
     // Sets interval in variable
@@ -26,38 +28,45 @@ function setTime() {
   }
 
   allQuizQuestions = {
-    'Commonly used data types do NOT include_______' :['1. strings', '2. booleans', '3. alerts', '4. numbers', 2],
+    question:'Commonly used data types do NOT include_______', 
+    options:['1. strings', '2. booleans', '3. alerts', '4. numbers'],
+    answer: 2,
 
-    'The condition in an if / else statement is enclosed within_______.' :['1. quotes', '2. curly brackets', '3. square brackets', '4. parentheses', 3],
+    question:'The condition in an if / else statement is enclosed within_______.',
+    options:['1. quotes', '2. curly brackets', '3. square brackets', '4. parentheses'],
+    answer: 3,
 
-    'Arrays in JavaScripts can be used to store _________' :['1. numbers and strings', '2. other arrays', '3. booleans', '4. all of the above', 3],
+    question:'Arrays in JavaScripts can be used to store _________',
+    options:['1. numbers and strings', '2. other arrays', '3. booleans', '4. all of the above'],
+    answer: 3,
 
-    'String values must be enclosed within ___________ when being assigned to variables' :['1. curly brackets', '2. commas', '3. quotes', '4. parentheses', 0],
+    question:'String values must be enclosed within ___________ when being assigned to variables',
+    options:['1. curly brackets', '2. commas', '3. quotes', '4. parentheses'],
+    answer: 0,
 
-    'A very useful tool used during development and debugging for printing content to the debugger is:' :['1. JavaScript', '2. terminal/bash', '3. for loops', '4 console.log', 3]
+    question:'A very useful tool used during development and debugging for printing content to the debugger is:', 
+    options: ['1. JavaScript', '2. terminal/bash', '3. for loops', '4 console.log'],
+    answer: 3,
 
   }
 
-function loadQuizQuestion () {
-
-}
-
-function loadQuizAnswers () {
-
-}
 
 function startQuiz() {   
     console.log("start quiz test log");
+
+    startQuizPromptEl.style.display = "none";
+    quizContainer.style.display = "block";
     setTime();
 
-
-    
-
+    insertQuestion();
 
 
 }
 
+function insertQuestion() {
+  console.log("question test");
 
+}
 
 function endQuiz() {
     console.log("end quiz test log");
