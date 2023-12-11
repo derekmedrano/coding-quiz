@@ -79,25 +79,33 @@ function addQuestion() {
 
   quizAnswersEl.textContent = allQuizQuestions[questionNumber].question;
 
+  // Selector variable given to each button, then gets display on the page
   for (var i = 0; i <= 3; i++) {
     var answerEl = document.getElementById('ansBtn' + i);
     answerEl.textContent = allQuizQuestions[questionNumber].options[i];
+    answerEl.addEventListener("click", checker);
 
 
   }
 
 }
 
-//This function checks the user's selected answers and determines whether or not the answer was correct or incorrect
-//An event is used here as we need to verify the user's input
+// This function checks the user's selected answers and determines whether or not the answer was correct or incorrect
+// An event is used here as we need to verify the user's input
+// If the user is correct the score is increased and 'Correct!' is displayed
+// If the user is incorrect the score remains the same, time is lost, and 'Incorrect' is displayed
 function checker(event) {
   event.preventDefault();
   console.log('checker test');
+
+  
 
 
 
 
 }
+
+//Ends the quiz, function is ran when the timer reaches 0
 function endQuiz() {
   console.log("end quiz test log");
 
