@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz - Free Study Tool!</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header class="container">
-        <a href="./index2.html" id="highscores">View Highscores</a>
-        <p id="timer"></p>
-    </header>
-    <main>
 
-      <section class="css-container" id="quiz">
-        <h1>Coding Quiz!</h1> 
-        <p id="quizStartPrompt">
-          Answer as many questions as you can before the timer ends! 
-          Note: Wrong answers will
-          reduce your time by 10 seconds!
-        </p>
-        <button id="start-quiz">Start Quiz!</button>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Coding Quiz - Free Study Tool!</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-      <section id="quizBox">
-        <h3 id = "quizQuestions"></h3>
-          <div id="quizAnswers">
-            <ul>
-              <li><button class="answerBtn" id="ansBtn0" value="1"></button></li>
-              <li><button class="answerBtn" id="ansBtn1" value="2"></button></li>
-              <li><button class="answerBtn" id="ansBtn2" value="3"></button></li>
-              <li><button class="answerBtn" id="ansBtn3" value="4"></button></li>
-            </ul>
-          </div>
-      </section>
+<body>
+  <header class="container">
+    <a href="./index2.html" id="highscores">View Highscores</a>
+    <p id="timer"></p>
+  </header>
+  <main>
 
-    </main>
+    <section class="css-container" id="quiz">
+      <h1>Coding Quiz!</h1>
+      <p id="quizStartPrompt">
+        Answer as many questions as you can before the timer ends!
+        Note: Wrong answers will
+        reduce your time by 10 seconds!
+      </p>
+      <button id="start-quiz">Start Quiz!</button>
+    </section>
 
-    <script src="./assets/js/script.js"></script>
-  </body>
+    <section id="quizBox">
+      <h3 id="quizQuestions"></h3>
+      <div id="quizAnswers">
+        <ul>
+          <li><button class="answerBtn" id="ansBtn0" value="1"></button></li>
+          <li><button class="answerBtn" id="ansBtn1" value="2"></button></li>
+          <li><button class="answerBtn" id="ansBtn2" value="3"></button></li>
+          <li><button class="answerBtn" id="ansBtn3" value="4"></button></li>
+        </ul>
+      </div>
+      <p id="score"></p>
+    </section>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
 
 </html>
