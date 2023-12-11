@@ -71,8 +71,9 @@ allQuizQuestions = [
 function startQuiz() {
   console.log('test: quiz start');
   // Removes Quiz Start prompt and displays the quiz in a block, time starts once quiz is loaded
-  startQuizPromptEl.style.display = "none";
-  quizContainer.style.display = "block";
+  startQuizPromptEl.style.display = 'none';
+  startQuizButtonEl.style.display = 'none';
+  quizContainer.style.display = 'block';
   setTime();
 
   addQuestion();
@@ -136,6 +137,8 @@ function checker(event) {
 //Ends the quiz, function is ran when the timer reaches zero OR when the last question is finished
 function endQuiz() {
   console.log("end quiz test log");
+  quizContainer.style.display = 'none';
+  highscorePromptEl.style.display = 'block';
 
 }
 
