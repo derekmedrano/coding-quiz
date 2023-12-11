@@ -1,6 +1,5 @@
 // Global variables
 var secondsLeft = 100;
-var score = 0;
 var questionNumber = 0;
 
 
@@ -23,7 +22,7 @@ var highscoreSubmitBtnEl = document.getElementById('highscoreSubmit');
 // Sets timer in header, ends quiz once time reaches 0
 function setTime() {
   // Sets interval in variable
-  var timerInterval = setInterval(function () {
+    timerInterval = setInterval(function () {
     secondsLeft--;
     timerEl.textContent = secondsLeft + " seconds remaining";
 
@@ -137,13 +136,31 @@ function checker(event) {
 //Ends the quiz, function is ran when the timer reaches zero OR when the last question is finished
 function endQuiz() {
   console.log("end quiz test log");
+
   quizContainer.style.display = 'none';
   highscorePromptEl.style.display = 'block';
+  clearInterval(timerInterval);
+  timerEl.textContent = secondsLeft + " seconds remaining";
+  highscoreEl.textContent = 'Your highscore is ' + secondsLeft;
+
 
 }
 
+function highscoreNav() {
+  var initials = highscoreInputEl.value
+  console.log(initials);
 
+  var highscore = {
+    initials,
+    secondsLeft,
+  }
+  var scores = JSON.parse(localStorage.getItem('scores')) || [];
+  scores.push(highscore);
+  localStorage.setItem('scores', JSON.stringify(scores));
+  window.location.replace('index2.html');
+}
 
 
 //Event listeners
 startQuizButtonEl.addEventListener("click", startQuiz);
+highscoreSubmitBtnEl.addEventListener("click", highscoreNav);
