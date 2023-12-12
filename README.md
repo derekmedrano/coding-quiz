@@ -1,7 +1,11 @@
 # <homework-4>
 
 ## Description
-    
+    This project is a multiple choice coding quiz. 
+    User's have 100 seconds to answer the questions and receive a final score based on the time remaining when the quiz ends.
+    User is then prompted to input their initials and their scores are saved locally.
+
+    ![Screenshot of quiz](<assets/images/Web capture_11-12-2023_194127_localhost.jpeg>)
 
 ## Installation
 N/A
