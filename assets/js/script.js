@@ -66,7 +66,7 @@ allQuizQuestions = [
 
 ]
 
-
+// Function that starts the quiz and removes the prompt
 function startQuiz() {
   console.log('test: quiz start');
   // Removes Quiz Start prompt and displays the quiz in a block, time starts once quiz is loaded
@@ -80,7 +80,7 @@ function startQuiz() {
 
 }
 
-//Prints the questions to the page
+// Prints the questions to the page
 function addQuestion() {
   console.log('test: add question');
 
@@ -146,6 +146,7 @@ function endQuiz() {
 
 }
 
+// This function prompts the user to enter their initials, user taken to highscore webpage once submit is clicked
 function highscoreNav() {
   var initials = highscoreInputEl.value;
   console.log(initials);

@@ -11,12 +11,14 @@
 </head>
 
 <body>
+  <!-- COntains link to highscore page and timer -->
   <header class="css-container">
     <a href="./index2.html" id="highscores">View Highscores</a>
     <p id="timer"></p>
   </header>
   <main>
 
+    <!-- This section is displayed by default and will be hidden once the quiz starts        -->
     <section class="css-container" id="quiz">
       <h1>Coding Quiz!</h1>
       <p id="quizStartPrompt">
@@ -27,6 +29,7 @@
       <button id="start-quiz">Start Quiz!</button>
     </section>
 
+    <!-- Section appears once quiz starts and disappears once quiz ends -->
     <section id="quizBox" style="display: none;" class="css-container">
       <h2 id="quizQuestions"></h2>
       <div id="quizAnswers">
@@ -40,6 +43,7 @@
       <p id="checkerDisplay"></p>
     </section>
 
+    <!-- This section appears when the quiz is over and is present until page refresh -->
     <section id="highscorePrompt" style="display: none;" class="css-container">
       <h2>Quiz is over</h2>
       <h3 id="highscore"></h3>
