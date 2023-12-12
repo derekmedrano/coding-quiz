@@ -147,7 +147,7 @@ function endQuiz() {
 }
 
 function highscoreNav() {
-  var initials = highscoreInputEl.value
+  var initials = highscoreInputEl.value;
   console.log(initials);
 
   var highscore = {

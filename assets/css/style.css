@@ -20,7 +20,7 @@ h1, p, button, #highscores {
   margin-bottom: 10px;
 }
 
-.answerBtn, #start-quiz, #highscoreSubmit {
+.answerBtn, #start-quiz, #highscoreSubmit, #clear {
   color: white;
   background-color: blueviolet;
 }
