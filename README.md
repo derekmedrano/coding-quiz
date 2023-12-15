@@ -1,4 +1,4 @@
-# <homework-4>
+# <coding-quiz>
 
 ## Description
     This project is a multiple choice coding quiz. 
@@ -8,6 +8,8 @@
 ## Installation
 N/A
 ## Usage
+Deployed site: https://derekmedrano.github.io/coding-quiz/
+
 Default page
 ![Screenshot of Application](<assets/images/Web capture_11-12-2023_194127_localhost.jpeg>)
 
